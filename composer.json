@@ -1,0 +1,41 @@
+{
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.5",
+        "ext-pdo": "*",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^7.10",
+        "symfony/yaml": "^8.0",
+        "symfony/console": "^8.0",
+        "vlucas/phpdotenv": "^5.6",
+        "shish/ffsphp": "^1.4",
+        "shish/microotlp": "^0.0.15",
+        "shish/microhtml": "^2.7",
+        "shish/microcrud": "^2.4",
+        "php-ffmpeg/php-ffmpeg": "^1.4",
+        "symfony/var-dumper": "^8.0",
+        "monolog/monolog": "^3.10",
+        "league/plates": "^3.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^13.0",
+        "phpstan/phpstan": "^2.1",
+        "friendsofphp/php-cs-fixer": "^3.94"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "suggest": {
+        "ext-pdo_sqlite": "database - sqlite",
+        "ext-pdo_mysql": "database - mysql",
+        "ext-pdo_pgsql": "database - postgres",
+        "ext-json": "some extensions",
+        "ext-xml": "some extensions"
+    }
+}
